@@ -1,0 +1,18 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Lid</title>
+        {% else %}
+        <title>The Lid</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>
+            Placeholder:
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('three') }}">Page 3</a>
+        </div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
