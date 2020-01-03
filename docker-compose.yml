@@ -2,6 +2,6 @@ version: "3.3"
 
 services:
   web:
-    build: https://github.com/benlavelle/hipflask-lid.git#master
+    build: https://github.com/ben-lavelle/hipflask-lid.git#master
     ports:
       - "80:5000"
